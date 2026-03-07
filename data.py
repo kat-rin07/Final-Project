@@ -76,3 +76,15 @@ class HealthRecord(Student):
 
         #alternative version of code
         #return (self.id, self.year, self.dorm, self.year) == (other.id, other.year, other.dorm, other.year)
+
+def cases(records)->dict:
+    count = {}
+    for record in records:
+        illness = record.illness
+        if illness in count:
+            count[illness] += 1
+        else:
+            count[illness] = 1
+    return count
+
+def most_cases(count:dict)->(list[str],int):
