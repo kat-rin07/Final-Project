@@ -50,6 +50,9 @@ def total_participants(records: list[object]) -> int:
     total = len(records)
     return total
 
+#Made by Kathrin
+#This function when given variables will return print statements
+#The input is the data from the function and the output is the print statement for each variable of the functions
 def display(count, total, top_dorm, top_dorm_count, dorm_count, top_illness, top_illness_count):
     print("\n=== Health Report ===")
     print("\nTotal Participants: ", total)

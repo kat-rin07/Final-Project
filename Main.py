@@ -4,6 +4,7 @@ from dataset import records
 
 #main.py made by Kathrin and Marissa
 def main():
+
     illness_counts = illness_cases(records)
     top_illness, top_illness_count = illness_with_most_cases(illness_counts)
 
