@@ -6,4 +6,13 @@ import data
 
 
 #Functions go here!
-def dorm_cases(records:list[object], community_health:list[object])
+#Marissa
+def cases(records):
+    count = {}
+    for record in records:
+        illness = record.illness
+        if illness in count:
+            count[illness] += 1
+        else:
+            count[illness] = 1
+    return count
