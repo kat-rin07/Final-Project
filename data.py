@@ -86,4 +86,3 @@ def cases(records):
         else:
             count[illness] = 1
     return count
-
