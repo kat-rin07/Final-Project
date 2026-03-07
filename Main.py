@@ -1,7 +1,31 @@
-import functions
-import dataset
+from itertools import count
 
-cases = functions.illness_cases(dataset.records)
-top_illness, top_illness_count = functions.illness_with_most_cases(cases)
-print("most illness:", top_illness)
-print("most illness count:", top_illness_count)
+from functions import (dorm_with_most_cases, illness_with_most_cases,
+                       illness_cases, dorms, total_participants, display)
+from dataset import records
+
+
+#main.py made by Kathrin
+
+def main():
+    illness_counts = illness_cases(records)
+    top_illness, top_illness_count = illness_with_most_cases(illness_counts)
+
+    dorm_counts = dorms(records)
+    top_dorm, top_dorm_count = dorm_with_most_cases(dorm_counts)
+
+    participants = total_participants(records)
+
+    display(
+        illness_counts,
+        participants,
+        top_dorm,
+        top_dorm_count,
+        dorm_counts,
+        top_illness,
+        top_illness_count
+    )
+
+if __name__ == '__main__':
+    main()
+
