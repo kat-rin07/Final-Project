@@ -1,6 +1,6 @@
 import data
 
-#provided by Marissa
+#Made by Marissa
 records = [
     data.HealthRecord("001", "Freshman", "Santa Lucia", "Common Cold"),
     data.HealthRecord("002", "Sophomore", "PCV", "Covid"),

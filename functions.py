@@ -20,7 +20,6 @@ def illness_with_most_cases(count:dict):
             top_illness = [illness]
         elif count[illness] ==  top_illness_count:
             top_illness.append(illness)
-
     return top_illness, top_illness_count
 
 def dorms(records:list[HealthRecord]) -> dict:
@@ -42,7 +41,6 @@ def dorm_with_most_cases(dorm_count:dict):
             top_dorm = [dorm]
         elif dorm_count[dorm] ==  top_dorm_count:
             top_dorm.append(dorm)
-
     return top_dorm, top_dorm_count
 
 #Made by Kathrin
@@ -59,7 +57,6 @@ def display(count, total, top_dorm, top_dorm_count, dorm_count, top_illness, top
     print("Illness Cases: ", count)
     print("Illness with the most cases: ", top_illness)
     print("Cases: ", top_illness_count)
-
     print("\n---Dorm Breakdown ---")
     print("Dorm Cases: ", dorm_count )
     print("Dorm with most cases: ", top_dorm)
