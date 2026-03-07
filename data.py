@@ -45,17 +45,16 @@ class HealthRecord(Student):
     #input: the student objects id, year, and dorm from student class
     #input: the student's illness
     #input: the student's frequency of illness
-    def __init__(self, id, year, dorm, illness, frequency):
+    def __init__(self, id, year, dorm, illness):
         super().__init__(id, year, dorm)
         self.illness = illness
-        self.frequency = frequency
 
 
     #Develper-friendly string representation of the object
     #input: HealthRecord for which a string representation is desired
     #output: string representation
     def __repr__(self):
-        return "HealthRecord('{}', '{}', '{}', '{}', '{}')".format(self.id, self.year, self.dorm, self.illness, self.frequency)
+        return "HealthRecord('{}', '{}', '{}', '{}')".format(self.id, self.year, self.dorm, self.illness)
 
         #Alternative code in f-string but may not be developer friendly???:
         #return f"HealthRecord('{self.id}', '{self.year}', '{self.dorm}', '{self.illness}', '{self.frequency}')"
@@ -71,8 +70,7 @@ class HealthRecord(Student):
                 self.id == other.id and
                 self.year == other.year and
                 self.dorm == other.dorm and
-                self.illness == other.illness and
-                self.frequency == other.frequency)
+                self.illness == other.illness)
 
         #alternative version of code
         #return (self.id, self.year, self.dorm, self.year) == (other.id, other.year, other.dorm, other.year)
