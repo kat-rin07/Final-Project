@@ -52,7 +52,6 @@ def total_participants(records: list[object]) -> int:
     total = len(records)
     return total
 
-
 def display(count, total, top_dorm, top_dorm_count, dorm_count, top_illness, top_illness_count):
     print("\n=== Health Report ===")
     print("\nTotal Participants: ", total)
