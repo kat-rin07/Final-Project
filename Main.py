@@ -1,11 +1,12 @@
 from itertools import count
+import functions
 
 from functions import (dorm_with_most_cases, illness_with_most_cases,
                        illness_cases, dorms, total_participants, display)
 from dataset import records
 
 
-#main.py made by Kathrin
+#main.py made by Kathrin and Marissa
 
 def main():
     illness_counts = illness_cases(records)
@@ -23,9 +24,10 @@ def main():
         top_dorm_count,
         dorm_counts,
         top_illness,
-        top_illness_count
+        top_illness_count,
     )
+
+    print("\nIncrease sanitation and airflow in {} and take care of yourself to lessen cases of {}.".format(top_dorm, top_illness))
 
 if __name__ == '__main__':
     main()
-

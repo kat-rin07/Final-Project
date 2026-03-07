@@ -7,5 +7,5 @@ records = [
     data.HealthRecord("004", "Sophomore", "PCV", "Flu"),
     data.HealthRecord("005", "Freshman", "Santa Lucia", "Flu"),
     data.HealthRecord("006", "Freshman", "Santa Lucia", "Common Cold"),
-    data.HealthRecord("007", "Freshman", "Fermont", "Common Cold"),
+    data.HealthRecord("007", "Freshman", "Fermont", "Common Cold")
 ]
