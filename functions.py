@@ -64,10 +64,9 @@ def display(count, total, top_dorm, top_dorm_count, dorm_count, top_illness, top
     print("\n--- Illness Breakdown ---")
     print("Illness Cases: ", count)
     print("Illness with the most cases: ", top_illness)
-    print("Count of Illness: ", top_illness_count)
+    print("Cases: ", top_illness_count)
 
     print("\n---Dorm Breakdown ---")
     print("Dorm Cases: ", dorm_count )
     print("Dorm with most cases: ", top_dorm)
-    print("Number of Cases", top_dorm_count)
-
+    print("Number of Cases in dorm: ", top_dorm_count)
