@@ -16,3 +16,15 @@ def cases(records):
         else:
             count[illness] = 1
     return count
+
+def most_cases(count):
+    top_illness = []
+    top_illness_count = 0
+    for illness in count:
+        if count[illness] > top_illness_count:
+            top_illness_count = count[illness]
+            top_illness = [illness]
+        elif count[illness] ==  top_illness_count:
+            top_illness.append(illness)
+
+    return top_illness, top_illness_count
