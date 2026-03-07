@@ -52,7 +52,7 @@ class DataTests(unittest.TestCase):
 #Test 1 - Class HealthRecord
 
     def test_HealthRecord(self):
-        record = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold')
+        record = data.HealthRecord('Participant 1', "Freshman", "Santa Lucia", "Common Cold")
         self.assertEqual(record.id, 'Participant 1')
         self.assertEqual(record.year, 'Freshman')
         self.assertEqual(record.dorm, 'Santa Lucia')
