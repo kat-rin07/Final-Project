@@ -1,7 +1,6 @@
 import data
 import unittest
 
-from data import HealthRecord
 
 
 #Test for Classes Written by Kathrin (mark done when checked/or fixed)
@@ -53,38 +52,37 @@ class DataTests(unittest.TestCase):
 #Test 1 - Class HealthRecord
 
     def test_HealthRecord(self):
-        record = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold', '3')
+        record = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold')
         self.assertEqual(record.id, 'Participant 1')
         self.assertEqual(record.year, 'Freshman')
         self.assertEqual(record.dorm, 'Santa Lucia')
         self.assertEqual(record.illness, 'Common Cold')
-        self.assertEqual(record.frequency, '3')
 
 #Test 2 - Class HealthRecord
     def test_HealthRecord_eq_1(self):
-        student_1 = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold', '3')
-        student_2 = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold', '3')
+        student_1 = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold')
+        student_2 = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold')
         self.assertEqual(student_1, student_2)
 
 #Test 3 - Class HealthRecord
 
     def test_HealthRecord_eq_2(self):
-        student = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold', '3')
+        student = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold')
         self.assertEqual(student, student)
 
 #Test 4 - Class Health Record
     def test_HealthRecord_eq_3(self):
-        student = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold', '3')
-        student1 = data.HealthRecord('Participant 2', 'Transfer', "Poly Canyon Village", 'Flu', '1')
+        student = data.HealthRecord('Participant 1', 'Freshman', 'Santa Lucia', 'Common Cold')
+        student1 = data.HealthRecord('Participant 2', 'Transfer', "Poly Canyon Village", 'Flu')
         self.assertNotEqual(student, student1)
 
 #Test 5 - Class Health Record
     def test_HealthRecord_eq_4(self):
-        student = data.HealthRecord('Participant', 'Freshman', 'Santa Lucia', 'Common Cold', '3')
+        student = data.HealthRecord('Participant', 'Freshman', 'Santa Lucia', 'Common Cold')
         other = 10
         self.assertNotEqual(student, other)
 
     def test_HealthRecord_repr(self):
-        student = data.HealthRecord('Participant', 'Freshman', 'Santa Lucia', 'Common Cold', '3')
+        student = data.HealthRecord('Participant', 'Freshman', 'Santa Lucia', 'Common Cold')
         self.assertEqual(repr(student),
-                         "HealthRecord('Participant', 'Freshman', 'Santa Lucia', 'Common Cold', '3')")
+                         "HealthRecord('Participant', 'Freshman', 'Santa Lucia', 'Common Cold')")
