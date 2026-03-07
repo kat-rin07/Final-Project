@@ -1,11 +1,6 @@
-
 from data import HealthRecord
-from data import Student
-import data
 
-
-#Functions go here!
-#Marissa's Functions
+# Made by Marissa
 def illness_cases(records:list[HealthRecord]) -> dict:
     count = {}
     for record in records:
