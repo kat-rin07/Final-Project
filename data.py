@@ -1,7 +1,6 @@
 
 
-#(Classes Created by Kathrin, mark done when checked and/or fixed)
-#(Classes fixed/debugged by ___)
+#(Classes Created by Kathrin)
 
 #Representation of a student, parent class
 class Student:
@@ -36,7 +35,6 @@ class Student:
                 self.dorm == other.dorm)
 
 
-
 #Representation of a health record, child class using student object
 class HealthRecord(Student):
 
@@ -56,9 +54,6 @@ class HealthRecord(Student):
     def __repr__(self):
         return "HealthRecord('{}', '{}', '{}', '{}')".format(self.id, self.year, self.dorm, self.illness)
 
-        #Alternative code in f-string but may not be developer friendly???:
-        #return f"HealthRecord('{self.id}', '{self.year}', '{self.dorm}', '{self.illness}', '{self.frequency}')"
-
 
     #Compare the HealthRecord object with another value to determine equality.
     #input: HealthRecord which to compare
@@ -72,8 +67,6 @@ class HealthRecord(Student):
                 self.dorm == other.dorm and
                 self.illness == other.illness)
 
-        #alternative version of code
-        #return (self.id, self.year, self.dorm, self.year) == (other.id, other.year, other.dorm, other.year)
 
 
 

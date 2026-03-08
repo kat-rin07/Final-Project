@@ -3,7 +3,7 @@ import unittest
 import data
 import functions
 
-#Tests for functions Written by Kathrin (mark when done/fixed)
+#Tests for functions Written by Kathrin
 
 class DataTest(unittest.TestCase):
 

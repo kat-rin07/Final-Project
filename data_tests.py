@@ -3,8 +3,7 @@ import unittest
 
 
 
-#Test for Classes Written by Kathrin (mark done when checked/or fixed)
-#Test for Classes debugged/fixed by ___
+#Test for Classes Written by Kathrin
 
 class DataTests(unittest.TestCase):
 
